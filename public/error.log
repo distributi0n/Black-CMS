@@ -1,0 +1,14 @@
+[07-Oct-2017 01:36:18 UTC] PHP Notice:  Undefined offset: 1 in C:\Winginx\home\localhost\public_html\app\global.php on line 7
+[07-Oct-2017 01:36:18 UTC] PHP Notice:  Undefined variable: start in C:\Winginx\home\localhost\public_html\app\global.php on line 9
+[07-Oct-2017 01:36:19 UTC] PHP Notice:  Undefined offset: 1 in C:\Winginx\home\localhost\public_html\app\global.php on line 7
+[07-Oct-2017 01:36:19 UTC] PHP Notice:  Undefined variable: start in C:\Winginx\home\localhost\public_html\app\global.php on line 9
+[07-Oct-2017 01:36:34 UTC] PHP Notice:  Undefined variable: start in C:\Winginx\home\localhost\public_html\app\global.php on line 9
+[07-Oct-2017 01:36:35 UTC] PHP Notice:  Undefined variable: start in C:\Winginx\home\localhost\public_html\app\global.php on line 9
+[07-Oct-2017 01:37:50 UTC] PHP Notice:  Undefined variable: start in C:\Winginx\home\localhost\public_html\app\global.php on line 10
+[07-Oct-2017 01:37:51 UTC] PHP Notice:  Undefined variable: start in C:\Winginx\home\localhost\public_html\app\global.php on line 10
+[07-Oct-2017 01:38:57 UTC] PHP Notice:  A non well formed numeric value encountered in C:\Winginx\home\localhost\public_html\app\global.php on line 9
+[07-Oct-2017 01:38:58 UTC] PHP Notice:  A non well formed numeric value encountered in C:\Winginx\home\localhost\public_html\app\global.php on line 9
+[07-Oct-2017 01:49:48 UTC] PHP Warning:  require(C:\Winginx\home\localhost\public_html): failed to open stream: Permission denied in C:\Winginx\home\localhost\public_html\public\index.php on line 12
+[07-Oct-2017 01:49:48 UTC] PHP Fatal error:  require(): Failed opening required 'C:\Winginx\home\localhost\public_html' (include_path='.;C:\php\pear') in C:\Winginx\home\localhost\public_html\public\index.php on line 12
+[07-Oct-2017 01:49:48 UTC] PHP Warning:  require(C:\Winginx\home\localhost\public_html): failed to open stream: Permission denied in C:\Winginx\home\localhost\public_html\public\index.php on line 12
+[07-Oct-2017 01:49:48 UTC] PHP Fatal error:  require(): Failed opening required 'C:\Winginx\home\localhost\public_html' (include_path='.;C:\php\pear') in C:\Winginx\home\localhost\public_html\public\index.php on line 12
