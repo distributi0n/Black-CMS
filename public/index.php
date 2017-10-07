@@ -10,4 +10,4 @@
  */
 
 include realpath(__DIR__.'/../') .'/vendor/autoload.php';
-require realpath(__DIR__.'/../') . '/app/global.php';
+require realpath(__DIR__.'/../') . '/bootstrap/app.php';
