@@ -2,7 +2,8 @@
     "name": "distributi0n/black-cms",
     "description": "A simple content management system.",
     "require": {
-        "twig/twig": "^2.0"
+        "twig/twig": "^2.0",
+        "monolog/monolog": "^1.23"
     },
     "license": "Apache-2.0",
     "authors": [{

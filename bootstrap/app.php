@@ -9,8 +9,20 @@
  *
  */
 
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
 define("START", microtime(true));
 define("ROOT", realpath(__DIR__.'/../'));
+
+$log = new Logger('blackcms');
+$log->pushHandler(new StreamHandler('../storage/logs/blackcms.log', Logger::WARNING));
+$log->warning('lol1');
+$log->error('lol12');
+$log->warning('lol1');
+$log->error('lol12');
+$log->warning('lol1');
+$log->error('lol12');
 
 $loader = new Twig_Loader_Filesystem('../resources/templates/test');
 
