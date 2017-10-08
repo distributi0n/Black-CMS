@@ -19,11 +19,11 @@ class Template
 
     public function __construct() {
         $config = Fedee::get('config');
-        $loader = new \Twig_Loader_Filesystem(ROOT . $config->get('core:template.full_directory'));
+        $loader = new \Twig_Loader_Filesystem(ROOT . '/' . $config->get('core:template.full_directory'));
 
         if ($config->get('core:twig.caching.enabled')) {
             $this->twigInstance = new \Twig_Environment($loader, array(
-                'cache' => ROOT . $config->get('core:twig.cache_directory'),
+                'cache' => ROOT . '/' . $config->get('core:twig.cache_directory'),
             ));
         }
         else {

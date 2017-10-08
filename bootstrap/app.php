@@ -14,7 +14,7 @@ use \App\Fedee\Fedee;
 define("START", microtime(true));
 define("ROOT", realpath(__DIR__.'/../'));
 
-require ROOT . '/app/library/Fedee/fedee.class.php';
+require ROOT . '/app/library/Fedee/Fedee.php';
 
 Fedee::get('template')->render('index.html');
 

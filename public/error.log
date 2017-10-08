@@ -114,3 +114,43 @@ Stack trace:
 #4 C:\Winginx\home\localhost\public_html\BlackCMS\public\index.php(13): require('C:\\Winginx\\home...')
 #5 {main}
   thrown in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php on line 247
+[08-Oct-2017 01:54:40 UTC] PHP Warning:  require(C:\Winginx\home\localhost\public_html\BlackCMS/app/library/Fedee/fedee.class.php): failed to open stream: No such file or directory in C:\Winginx\home\localhost\public_html\BlackCMS\bootstrap\app.php on line 17
+[08-Oct-2017 01:54:40 UTC] PHP Fatal error:  require(): Failed opening required 'C:\Winginx\home\localhost\public_html\BlackCMS/app/library/Fedee/fedee.class.php' (include_path='.;C:\php\pear') in C:\Winginx\home\localhost\public_html\BlackCMS\bootstrap\app.php on line 17
+[08-Oct-2017 01:55:23 UTC] PHP Warning:  require(C:\Winginx\home\localhost\public_html\BlackCMS/app/library/Fedee/fedee.class.php): failed to open stream: No such file or directory in C:\Winginx\home\localhost\public_html\BlackCMS\bootstrap\app.php on line 17
+[08-Oct-2017 01:55:23 UTC] PHP Fatal error:  require(): Failed opening required 'C:\Winginx\home\localhost\public_html\BlackCMS/app/library/Fedee/fedee.class.php' (include_path='.;C:\php\pear') in C:\Winginx\home\localhost\public_html\BlackCMS\bootstrap\app.php on line 17
+[08-Oct-2017 01:55:30 UTC] PHP Warning:  require(C:\Winginx\home\localhost\public_html\BlackCMS/app/library/Fedee/fedee.class.php): failed to open stream: No such file or directory in C:\Winginx\home\localhost\public_html\BlackCMS\bootstrap\app.php on line 17
+[08-Oct-2017 01:55:30 UTC] PHP Fatal error:  require(): Failed opening required 'C:\Winginx\home\localhost\public_html\BlackCMS/app/library/Fedee/fedee.class.php' (include_path='.;C:\php\pear') in C:\Winginx\home\localhost\public_html\BlackCMS\bootstrap\app.php on line 17
+[08-Oct-2017 01:56:14 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "index.html" (looked into: C:\Winginx\home\localhost\public_html\BlackCMS). in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:226
+Stack trace:
+#0 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('index.html')
+#1 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php(270): Twig_Loader_Filesystem->getCacheKey('index.html')
+#2 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php(350): Twig_Environment->getTemplateClass('index.html')
+#3 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('index.html')
+#4 C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\Template.php(35): Twig_Environment->render('index.html', Array)
+#5 C:\Winginx\home\localhost\public_html\BlackCMS\bootst in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 226
+[08-Oct-2017 01:57:42 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "index.html" (looked into: C:\Winginx\home\localhost\public_html\BlackCMS). in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:226
+Stack trace:
+#0 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('index.html')
+#1 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php(270): Twig_Loader_Filesystem->getCacheKey('index.html')
+#2 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php(350): Twig_Environment->getTemplateClass('index.html')
+#3 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('index.html')
+#4 C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\Template.php(35): Twig_Environment->render('index.html', Array)
+#5 C:\Winginx\home\localhost\public_html\BlackCMS\bootst in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 226
+[08-Oct-2017 01:58:26 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "index.html" (looked into: C:\Winginx\home\localhost\public_html\BlackCMS). in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:226
+Stack trace:
+#0 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('index.html')
+#1 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php(270): Twig_Loader_Filesystem->getCacheKey('index.html')
+#2 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php(350): Twig_Environment->getTemplateClass('index.html')
+#3 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php(289): Twig_Environment->loadTemplate('index.html')
+#4 C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\Template.php(35): Twig_Environment->render('index.html', Array)
+#5 C:\Winginx\home\localhost\public_html\BlackCMS\bootst in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 226
+[08-Oct-2017 02:00:12 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\Config.php on line 31
+[08-Oct-2017 02:01:41 UTC] PHP Notice:  Undefined variable: config in C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\Config.php on line 35
+[08-Oct-2017 02:06:48 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: The "C:\Winginx\home\localhost\public_html\BlackCMSresources/templates/test" directory does not exist ("C:\Winginx\home\localhost\public_html\BlackCMSresources/templates/test"). in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:101
+Stack trace:
+#0 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(82): Twig_Loader_Filesystem->addPath('C:\\Winginx\\home...', '__main__')
+#1 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(40): Twig_Loader_Filesystem->setPaths(Array)
+#2 C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\Template.php(22): Twig_Loader_Filesystem->__construct('C:\\Winginx\\home...')
+#3 C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\Fedee.php(37): App\Fedee\Template->__construct()
+#4 C:\Winginx\home\localhost\public_html\BlackCMS\bootstrap\app.php(19): App\Fedee\Fedee::get('template')
+#5 C:\Winginx\home\l in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 101

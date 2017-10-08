@@ -21,14 +21,14 @@ class Config
         $this->set('core:monolog.log_name', 'fedee');
         $this->set('core:monolog.log_directory', '/storage/logging');
         $this->set('core:twig.caching.enabled', false);
-        $this->set('core:twig.cache_directory', '/storage/cache/templates/');
-        $this->set('core:template.directory', '/resources/templates/');
+        $this->set('core:twig.cache_directory', '/storage/cache/templates');
+        $this->set('core:template.directory', 'resources/templates');
         $this->set('core:template.folder', 'test');
-        $this->set('core:template.full_directory', $this->config['core:template.directory'] . $this->config['core:template.folder']);
+        $this->set('core:template.full_directory', $this->config['core:template.directory'] . '/' . $this->config['core:template.folder']);
     }
 
     public function get($key){
-        if (in_array($key, $this->config)) {
+        if (isset($this->config[$key])) {
             return $this->config[$key];
         }
 
