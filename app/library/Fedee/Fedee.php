@@ -16,12 +16,11 @@ defined('START') or exit('We couldn\'t process your request right now.');
 class Fedee 
 {
     private static $librarys = array();
-    private static $classes = array();
 
     public static function get($library)
     {
         if (isset(self::$librarys[$library]) && isset(self::$classes[$library])) {
-            return self::$classes[$library];
+            return self::$librarys[$library];
         }
 
         $fixedLibrary = str_replace('.', '/', $library);
@@ -34,7 +33,7 @@ class Fedee
         $delcaredClasses = get_declared_classes();
         $workingClass = end($delcaredClasses);
 
-        self::$classes[$library] = new $workingClass();
-        return self::$classes[$library];
+        self::$librarys[$library] = new $workingClass();
+        return self::$librarys[$library];
     }
 }
