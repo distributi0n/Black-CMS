@@ -95,3 +95,22 @@ Stack trace:
 #2 C:\Winginx\home\localhost\public_html\BlackCMS\public\index.php(13): require('C:\\Winginx\\home...')
 #3 {main}
   thrown in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php on line 287
+[08-Oct-2017 01:00:26 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: The "/resources/templates/test" directory does not exist ("/resources/templates/test"). in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:101
+Stack trace:
+#0 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(82): Twig_Loader_Filesystem->addPath('/resources/temp...', '__main__')
+#1 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(40): Twig_Loader_Filesystem->setPaths(Array)
+#2 C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\template.class.php(22): Twig_Loader_Filesystem->__construct('/resources/temp...')
+#3 C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\fedee.class.php(37): App\Fedee\Template->__construct()
+#4 C:\Winginx\home\localhost\public_html\BlackCMS\bootstrap\app.php(19): App\Fedee\Fedee::get('template')
+#5 C:\Winginx\home\localhost\public_html\BlackCMS\public\index.php(13): require('C:\\Winginx\\home...' in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 101
+[08-Oct-2017 01:00:47 UTC] PHP Notice:  Undefined index: core:template.cache_directory in C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\config.class.php on line 32
+[08-Oct-2017 01:48:14 UTC] PHP Warning:  array_merge(): Argument #2 is not an array in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php on line 97
+[08-Oct-2017 01:48:14 UTC] PHP Fatal error:  Uncaught LogicException: Cache can only be a string, false, or a Twig_CacheInterface implementation. in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php:247
+Stack trace:
+#0 C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php(104): Twig_Environment->setCache(NULL)
+#1 C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\template.class.php(28): Twig_Environment->__construct(Object(Twig_Loader_Filesystem), NULL)
+#2 C:\Winginx\home\localhost\public_html\BlackCMS\app\library\Fedee\fedee.class.php(37): App\Fedee\Template->__construct()
+#3 C:\Winginx\home\localhost\public_html\BlackCMS\bootstrap\app.php(19): App\Fedee\Fedee::get('template')
+#4 C:\Winginx\home\localhost\public_html\BlackCMS\public\index.php(13): require('C:\\Winginx\\home...')
+#5 {main}
+  thrown in C:\Winginx\home\localhost\public_html\BlackCMS\vendor\twig\twig\lib\Twig\Environment.php on line 247

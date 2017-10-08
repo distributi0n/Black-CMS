@@ -9,7 +9,7 @@
  *
  */
 
-use \Fedee\Fedee\Fedee;
+use \App\Fedee\Fedee;
 
 define("START", microtime(true));
 define("ROOT", realpath(__DIR__.'/../'));

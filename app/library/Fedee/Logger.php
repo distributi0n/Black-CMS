@@ -9,7 +9,7 @@
  *
  */
 
-namespace Fedee\Fedee;
+namespace App\Fedee;
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
@@ -21,8 +21,10 @@ class FedeeLogger
     private $logger;
 
     public function __construct() {
-        $this->logger = new Logger('fedee');
-        $this->logger->pushHandler(new StreamHandler('../storage/logs/fedee.log', Logger::WARNING));
+        $config = Fedee::get('config');
+
+        $this->logger = new Logger($config->get('core:monolog.log_name'));
+        $this->logger->pushHandler(new StreamHandler(ROOT . $config->get('core:monolog.log_directory'), Logger::WARNING));
     }
 
     public function getLogger() {

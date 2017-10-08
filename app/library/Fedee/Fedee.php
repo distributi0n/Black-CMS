@@ -9,7 +9,7 @@
  *
  */
 
-namespace Fedee\Fedee;
+namespace App\Fedee;
 
 defined('START') or exit('We couldn\'t process your request right now.');
 
@@ -25,7 +25,7 @@ class Fedee
         }
 
         $fixedLibrary = str_replace('.', '/', $library);
-		$file = ROOT . '/app/library/fedee/' . $fixedLibrary . '.class.php';
+		$file = ROOT . '/app/library/fedee/' . strtolower($fixedLibrary) . '.php';
 
         self::$librarys[$library] = $library;
 
