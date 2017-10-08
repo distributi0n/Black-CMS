@@ -1,5 +1,5 @@
 {
-    "name": "distributi0n/black-cms",
+    "name": "distributi0n/fedee",
     "description": "A simple content management system.",
     "require": {
         "twig/twig": "^2.0",
