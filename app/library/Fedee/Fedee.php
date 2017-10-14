@@ -15,25 +15,25 @@ defined('START') or exit('We couldn\'t process your request right now.');
 
 class Fedee 
 {
-    private static $librarys = array();
+    private static $libraries = array();
 
     public static function get($library)
     {
-        if (isset(self::$librarys[$library]) && isset(self::$classes[$library])) {
-            return self::$librarys[$library];
+        if (isset(self::$libraries[$library]) && isset(self::$classes[$library])) {
+            return self::$libraries[$library];
         }
 
         $fixedLibrary = str_replace('.', '/', $library);
-		$file = ROOT . '/app/library/fedee/' . strtolower($fixedLibrary) . '.php';
+		$file = ROOT . '/app/library/' . strtolower($fixedLibrary) . '.php';
 
-        self::$librarys[$library] = $library;
+        self::$libraries[$library] = $library;
 
         require($file);
         
-        $delcaredClasses = get_declared_classes();
-        $workingClass = end($delcaredClasses);
+        $declared = get_declared_classes();
+        $workingClass = end($declared);
 
-        self::$librarys[$library] = new $workingClass();
-        return self::$librarys[$library];
+        self::$libraries[$library] = new $workingClass();
+        return self::$libraries[$library];
     }
 }

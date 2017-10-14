@@ -14,6 +14,7 @@ class ComposerStaticInit18cf17370a66ccde448dd901c706f105
         'T' => 
         array (
             'Twig\\' => 5,
+            'TreeRoute\\' => 10,
         ),
         'S' => 
         array (
@@ -33,6 +34,10 @@ class ComposerStaticInit18cf17370a66ccde448dd901c706f105
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'TreeRoute\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/baryshev/tree-route/src',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (

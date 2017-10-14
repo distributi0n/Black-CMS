@@ -21,7 +21,7 @@ class FedeeLogger
     private $logger;
 
     public function __construct() {
-        $config = Fedee::get('config');
+        $config = Fedee::get('fedee.config');
 
         $this->logger = new Logger($config->get('core:monolog.log_name'));
         $this->logger->pushHandler(new StreamHandler(ROOT . $config->get('core:monolog.log_directory'), Logger::WARNING));

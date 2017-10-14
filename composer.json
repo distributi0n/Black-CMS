@@ -3,7 +3,8 @@
     "description": "A simple content management system.",
     "require": {
         "twig/twig": "^2.0",
-        "monolog/monolog": "^1.23"
+        "monolog/monolog": "^1.23",
+        "baryshev/tree-route": "^2.0"
     },
     "license": "Apache-2.0",
     "authors": [{

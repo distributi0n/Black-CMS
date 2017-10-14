@@ -256,5 +256,51 @@
             "logging",
             "psr-3"
         ]
+    },
+    {
+        "name": "baryshev/tree-route",
+        "version": "v2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/baryshev/TreeRoute.git",
+            "reference": "d19626a66a408ccf3ebfd7ef4ef80fad03d26799"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/baryshev/TreeRoute/zipball/d19626a66a408ccf3ebfd7ef4ef80fad03d26799",
+            "reference": "d19626a66a408ccf3ebfd7ef4ef80fad03d26799",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "codeception/codeception": "^2.1",
+            "codeception/specify": "^0.4.1"
+        },
+        "time": "2015-11-04T23:12:50+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "TreeRoute\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Vadim Baryshev",
+                "email": "vadimbaryshev@gmail.com"
+            }
+        ],
+        "description": "Perfomance focused request router",
+        "keywords": [
+            "router",
+            "routing"
+        ]
     }
 ]

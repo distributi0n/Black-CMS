@@ -16,6 +16,11 @@ define("ROOT", realpath(__DIR__.'/../'));
 
 require ROOT . '/app/library/Fedee/Fedee.php';
 
-Fedee::get('template')->render('index.html');
+$router = Fedee::get('fedee.routing');
+
+$router->setRoutes();
+$router->dispatch();
+
+// Fedee::get('fedee.template')->render('index.html');
 
 printf("\n<!-- Page was rendered in %.6f seconds -->", (microtime(true) - START));

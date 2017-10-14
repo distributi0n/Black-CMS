@@ -18,7 +18,7 @@ class Template
     private $twigInstance;
 
     public function __construct() {
-        $config = Fedee::get('config');
+        $config = Fedee::get('fedee.config');
         $loader = new \Twig_Loader_Filesystem(ROOT . '/' . $config->get('core:template.full_directory'));
 
         if ($config->get('core:twig.caching.enabled')) {
